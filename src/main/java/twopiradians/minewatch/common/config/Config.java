@@ -524,7 +524,7 @@ public class Config {
 		else
 			return Config.damageScale;
 	}
-
+	
 	public static Property getHeroTextureProp(EnumHero hero) {
 		return config.get(Config.CATEGORY_HERO_SKINS, hero.name+" Skin", hero.skinCredits[0], "Skins for "+hero.name+"'s armor", hero.skinCredits);
 	}

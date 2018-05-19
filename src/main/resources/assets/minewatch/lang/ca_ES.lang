@@ -175,6 +175,13 @@ item.pharah_leggings.name=Pantalons de Pharah
 item.pharah_boots.name=Botes de Pharah
 item.pharah_weapon.name=Llançacoets de Pharah
 
+item.dva_token.name=Fitxa de D.Va
+item.dva_helmet.name=Casc de D.Va
+item.dva_chestplate.name=Cuirassa de D.Va
+item.dva_leggings.name=Pantalons de D.Va
+item.dva_boots.name=Botes de D.Va
+item.dva_weapon.name=D.Va's Light Gun
+
 
 entity.random_hero.name=Heroi al·leatori
 entity.hanzo_hero.name=Hanzo
@@ -234,6 +241,8 @@ entity.roadhog_scrap.name=Chatarra de Roadhog
 entity.roadhog_hook.name=Ganxo de Roadhog
 entity.pharah_hero.name=Pharah
 entity.pharah_rocket.name=Coet de Pharah
+entity.dva_hero.name=D.Va
+entity.dva_rocket.name=Bala de D.Va
 
 command.reset.success=Aquesta partida de Minewatch ha sigut reiniciat per un moderador.
 command.reset.unrecognized_flags=No reconegut.

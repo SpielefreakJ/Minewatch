@@ -136,6 +136,13 @@ item.moira_leggings.name=Gambiera di Moira
 item.moira_boots.name=Stivali di Moira
 item.moira_weapon.name=Biomanipolazione di Moira
 
+item.dva_token.name=Icona di D.Va
+item.dva_helmet.name=Elmetto di D.Va
+item.dva_chestplate.name=Corazza di D.Va
+item.dva_leggings.name=Gambiera di D.Va
+item.dva_boots.name=Stivali di D.Va
+item.dva_weapon.name=D.Va's Lightgun
+
 entity.random_hero.name=Eroe casuale
 entity.hanzo_hero.name=Hanzo
 entity.hanzo_arrow.name=Freccia di Hanzo
@@ -183,3 +190,5 @@ entity.zenyatta_hero.name=Zenyatta
 entity.zenyatta_orb.name=Globo della Rovina di Zenyatta
 entity.moira_hero.name=Moira
 entity.moira_heal_energy.name=Energia Curativa di Moira
+entity.dva_hero.name=D.Va
+entity.dva_rocket.name=Proiettili di D.Va

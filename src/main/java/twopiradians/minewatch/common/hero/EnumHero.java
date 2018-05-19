@@ -30,6 +30,7 @@ import twopiradians.minewatch.common.config.Config;
 import twopiradians.minewatch.common.entity.hero.EntityAna;
 import twopiradians.minewatch.common.entity.hero.EntityBastion;
 import twopiradians.minewatch.common.entity.hero.EntityDoomfist;
+import twopiradians.minewatch.common.entity.hero.EntityDVa;
 import twopiradians.minewatch.common.entity.hero.EntityGenji;
 import twopiradians.minewatch.common.entity.hero.EntityHanzo;
 import twopiradians.minewatch.common.entity.hero.EntityJunkrat;
@@ -52,6 +53,7 @@ import twopiradians.minewatch.common.item.ItemMWToken;
 import twopiradians.minewatch.common.item.armor.ItemMWArmor;
 import twopiradians.minewatch.common.item.weapon.ItemAnaRifle;
 import twopiradians.minewatch.common.item.weapon.ItemBastionGun;
+import twopiradians.minewatch.common.item.weapon.ItemDVaPistol;
 import twopiradians.minewatch.common.item.weapon.ItemDoomfistWeapon;
 import twopiradians.minewatch.common.item.weapon.ItemGenjiShuriken;
 import twopiradians.minewatch.common.item.weapon.ItemHanzoBow;
@@ -368,15 +370,36 @@ public enum EnumHero {
 			6, 6, new ItemPharahWeapon(), Crosshair.CIRCLE_SMALL, 0x3D7BC8, true, EntityPharah.class, 
 			new Skin(Skin.Type.COMMON, "Classic" , "Pharah [OVERWATCH]", "Nudle", "https://www.planetminecraft.com/skin/pharah-overwatch-3812088/"),
 			new Skin(Skin.Type.COMMON, "Classic" , "Pharah (requested)", "Azon Guolun", "https://www.planetminecraft.com/skin/pharah-requested/"),
-			new Skin(Skin.Type.EPIC, "Possessed", "Pharah (possessed)", "TheMintCupcake", "https://www.planetminecraft.com/skin/pharah-possessed/"));
+			new Skin(Skin.Type.EPIC, "Possessed", "Pharah (possessed)", "TheMintCupcake", "https://www.planetminecraft.com/skin/pharah-possessed/")),
+	DVA("DVa", Type.TANK, false, false,  
+			150, 0, 0, 1000,
+			new Ability(KeyBind.ULTIMATE, false, false),
+			new Ability(KeyBind.ABILITY_2, false, false), 
+			new Ability(KeyBind.ABILITY_1, false, false), 
+			new Ability(KeyBind.NONE, false, false), 
+			20, 0, new ItemDVaPistol(), Crosshair.CIRCLE_SMALL, 0xB20990, false, EntityDVa.class, 
+			new Skin(Skin.Type.COMMON, "Classic" , "D.Va [OVERWATCH]", "Your808Bro", "http://www.minecraftskins.com/skin/10815437/dva/"),
+			new Skin(Skin.Type.EPIC, "Carbon Fiber" , "D.Va (Carbon Fiber)", "SpielefreakJ", "https://poketrainer-warren.de/"),
+			new Skin(Skin.Type.EPIC, "Houston Outlaws", "D.Va (Houston Oulaws)", "SpielefreakJ", "https://poketrainer-warren.de/"));
+	/*
+	{NAME}("{in-program-name}", Type.{Roletype}, {alternative weapon?}, {Alternative Weapon switch with scroling?}
+	 		{Base HP}, {Base Armor}, {base Shield}, {Ult Charge required},
+	 		new Ability(KeyBind.ULTIMATE, {enabled?}, false),
+			new Ability(KeyBind.ABILITY_2, {enabled?}, false), 
+			new Ability(KeyBind.ABILITY_1, {enabled?}, false), 
+			new Ability(KeyBind.NONE, {enabled?}, false), 
+			{Size 1st Weapon}, {Size alternative Weapon}, new Item{in-programm-name}{Weapon-name}(), Crosshair.{type of crosshair}, {color}, {small arms}, Entity{in-program-name}.class, 
+			new Skin(Skin.Type.COMMON, "Classic" , "{Hero Name} [OVERWATCH]", "{Uploader}", "{URL to skin}"),
+			new Skin(Skin.Type.{Cat of Skin}, "{Cat-name}", "{Hero Name} ({Skin Name})", "{Uploader}", "{URL to skin}"){, or ;}
+	*/
 
 	public enum Type {
 		OFFENSE, DEFENSE, TANK, SUPPORT;
 	}
 
 	public static final Handler VOICE_COOLDOWN = new Handler(Identifier.VOICE_COOLDOWN, false) {};
-	public static final ArrayList<EnumHero> ORDERED_HEROES = Lists.newArrayList(DOOMFIST, GENJI, MCCREE, PHARAH, REAPER, SOLDIER76, SOMBRA, TRACER, BASTION, HANZO, JUNKRAT, MEI, /*TORBJORN*/null, WIDOWMAKER, /*DVA*/null, /*ORISA*/null, REINHARDT, ROADHOG, /*WINSTON*/null, /*ZARYA*/null, ANA, LUCIO, MERCY, MOIRA, /*SYMMETRA*/null, ZENYATTA);
-	public static final ArrayList<EnumHero> ORDERED_HEROES_NONNULL = Lists.newArrayList(DOOMFIST, GENJI, MCCREE, PHARAH, REAPER, SOLDIER76, SOMBRA, TRACER, BASTION, HANZO, JUNKRAT, MEI, WIDOWMAKER, REINHARDT, ROADHOG, ANA, LUCIO, MERCY, MOIRA, ZENYATTA);
+	public static final ArrayList<EnumHero> ORDERED_HEROES = Lists.newArrayList(DOOMFIST, GENJI, MCCREE, PHARAH, REAPER, SOLDIER76, SOMBRA, TRACER, BASTION, HANZO, JUNKRAT, MEI, /*TORBJORN*/null, WIDOWMAKER, DVA, /*ORISA*/null, REINHARDT, ROADHOG, /*WINSTON*/null, /*ZARYA*/null, ANA, LUCIO, MERCY, MOIRA, /*SYMMETRA*/null, ZENYATTA);
+	public static final ArrayList<EnumHero> ORDERED_HEROES_NONNULL = Lists.newArrayList(DOOMFIST, GENJI, MCCREE, PHARAH, REAPER, SOLDIER76, SOMBRA, TRACER, BASTION, HANZO, JUNKRAT, MEI, WIDOWMAKER, DVA, REINHARDT, ROADHOG, ANA, LUCIO, MERCY, MOIRA, ZENYATTA);
 	public static final ArrayList<EnumHero> ORDERED_HEROES_ALPHABETICAL;
 	public static final ResourceLocation PORTRAIT_OVERLAY_0 = new ResourceLocation(Minewatch.MODID+":textures/gui/hero_select_portrait_overlay_0.png");
 	public static final ResourceLocation PORTRAIT_OVERLAY_1 = new ResourceLocation(Minewatch.MODID+":textures/gui/hero_select_portrait_overlay_1.png");
@@ -617,6 +640,8 @@ public enum EnumHero {
 			name = "Soldier: 76";
 		else if (this == EnumHero.LUCIO)
 			name = allCaps ? "L\u00DACIO": "L\u00FAcio";
+		else if (this == EnumHero.DVA)
+			name = "D.Va";
 
 		if (allCaps)
 			name = name.toUpperCase();
