@@ -173,6 +173,13 @@ item.pharah_leggings.name=Jambières de Pharah
 item.pharah_boots.name=Bottes de Pharah
 item.pharah_weapon.name=Lance-Roquettes de Pharah
 
+item.dva_token.name=Carte de D.Va
+item.dva_helmet.name=Casque de D.Va
+item.dva_chestplate.name=Plastron de D.Va
+item.dva_leggings.name=Jambières de D.Va
+item.dva_boots.name=Bottes de D.Va
+item.dva_weapon.name=D.Va's Lightgun
+
 entity.random_hero.name=Héro au hasard
 entity.hanzo_hero.name=Hanzo
 entity.hanzo_arrow.name=Flèche d'Hanzo
@@ -232,6 +239,8 @@ entity.roadhog_scrap.name=Ferraille de Roadhog
 entity.roadhog_hook.name=Crochet de Roadhog
 entity.pharah_hero.name=Pharah
 entity.pharah_rocket.name=Fusée de Pharah
+entity.dva_hero.name=D.Va
+entity.dva_rocket.name=Balle de D.Va
 
 command.reset.success=Partie de Minewatche "remise à 0" par un modérateur.
 command.reset.unrecognized_flags=Drapeau(s) non-reconnaisable

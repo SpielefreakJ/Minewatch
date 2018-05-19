@@ -178,6 +178,13 @@ item.pharah_leggings.name=Pharah Leggings
 item.pharah_boots.name=Pharah Boots
 item.pharah_weapon.name=Pharah's Rocket Launcher
 
+item.dva_token.name=D.Va Token
+item.dva_helmet.name=D.Va Helmet
+item.dva_chestplate.name=D.Va Chestplate
+item.dva_leggings.name=D.Va Leggings
+item.dva_boots.name=D.Va Boots
+item.dva_weapon.name=D.Va's Lightgun
+
 entity.random_hero.name=Random Hero
 entity.hanzo_hero.name=Hanzo
 entity.hanzo_arrow.name=Hanzo Arrow
@@ -237,6 +244,8 @@ entity.roadhog_scrap.name=Roadhog Scrap
 entity.roadhog_hook.name=Roadhog Hook
 entity.pharah_hero.name=Pharah
 entity.pharah_rocket.name=Pharah Rocket
+entity.dva_hero.name=D.Va
+entity.dva_rocket.name=D.Va Bullet
 
 command.reset.success=Minewatch game reset by a moderator.
 command.reset.unrecognized_flags=Unrecognized flag(s)
